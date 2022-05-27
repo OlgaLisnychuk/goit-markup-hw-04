@@ -10,6 +10,11 @@
     --header-border-color: #ECECEC;
     --portfolio-border-color:  #EEEEEE;
     --hero-bg-color: #C4C4C4;
+    --social-links-main-color: AFB1B8;
+    --klients-main-color: AFB1B8;
+   
+    --klients-color: #AFB1B8;
+    --bg-color-icon: rgba(255, 255, 255, .1)
 }
 
 html {
@@ -151,7 +156,7 @@ p {
 }
 
 
-.auth-nav .link::before {
+/* .auth-nav .link::before {
     display: inline-block;
     content: "";
     background-size: contain;
@@ -177,7 +182,7 @@ p {
     height: 16px; 
     background-image: url(../images/smartphone.svg);
 
-}
+}  */
 
 
 
@@ -317,7 +322,10 @@ width: 270px;
 
 .icon-astronout::before {
     background-image: url(../images/astronaut.svg);
-} 
+}  
+
+
+
 .feature-title {
     /* margin-top: 0; */
     margin-bottom: 10px;
@@ -389,6 +397,77 @@ margin-right: 30px;
     
 }
 
+.social-item {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+
+}
+
+.social-item:not(:last-child) {
+    margin-right: 10px;
+    
+}
+
+.social-list {
+    display: flex;
+    padding-top: 16px;
+    padding-right:  32px;
+    padding-left:  32px ;
+
+
+}
+.social-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--hero-bg-color);
+    
+}
+
+.social-icon:hover {
+    fill: var(--accent-color);
+    
+}
+
+/* Klients */
+
+.klients {
+    padding: 94px 215px 94px 215px;
+}
+
+.klients-list {
+    display: flex;
+}
+    
+.klients-item {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    color: var(--klients-color);
+    
+    border: 1px solid var(--klients-color);
+    }
+
+.klients-item:not(:last-child) {
+    margin-right: 33px;
+}
+
+.klients-item:hover,
+.klients-item:focus {
+   
+    border: 1px solid var(--accent-color);
+}
+.klient-icon {
+fill: var(--klients-color);
+border-radius: 4px;
+}
+
+.klient-icon:hover {
+fill: var(--accent-color);
+}
 
 
 /* Footer */
@@ -430,6 +509,52 @@ margin-bottom: 9px;
     color: var(--accent-color);
 }
 
+.footer-list {
+    display: flex;
+    width: 206px;
+    
+}
+
+.footer-adress {
+    margin-right: 70px;
+}
+
+.footer-flex {
+    display: flex;
+
+}
+
+
+.do-title {
+    
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--primary-white-color);
+margin-bottom: 20px;
+
+}
+
+.footer-link {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+   background-color: var(--bg-color-icon);
+
+}
+.footer-link:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-icon {
+    fill: var(--primary-white-color);
+}
+
+.footer-icon:hover {
+    fill: var(--accent-color);
+}
 
 /* Button  */
 
