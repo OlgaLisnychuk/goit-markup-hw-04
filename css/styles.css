@@ -537,7 +537,9 @@ margin-bottom: 20px;
 }
 
 .footer-link {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
